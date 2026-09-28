@@ -9,18 +9,6 @@
 
   <main id="carta" tabindex="-1">
     <div class="menu-shell">
-      <div class="menu-heading">
-        <div>
-          <p class="eyebrow">LA CARTA <span></span> SABOR A MAR</p>
-          <h2>De la costa<br><em>a tu mesa.</em></h2>
-        </div>
-        <div class="menu-heading-note">
-          <span class="sun-symbol" aria-hidden="true">✳</span>
-          <p>Explora, combina y pide exactamente lo que se te antoja.</p>
-          <small>Precios e imágenes referenciales</small>
-        </div>
-      </div>
-
       <div class="menu-controls">
         <label class="search-box">
           <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
@@ -43,7 +31,7 @@
       @if (filteredProducts().length) {
         <div class="category-list">
           @for (group of groupedProducts(); track group.id; let i = $index) {
-            <section class="category-section" [class.promotion-section]="group.id === 'promociones'" [id]="'categoria-' + group.id" [attr.aria-labelledby]="'title-' + group.id">
+            <section class="category-section" [class.duo-section]="group.id === 'duos'" [class.text-section]="group.id === 'trios' || group.id === 'mas-promociones'" [id]="'categoria-' + group.id" [attr.aria-labelledby]="'title-' + group.id">
               <div class="category-heading">
                 <span class="category-index">{{ (i + 1).toString().padStart(2, '0') }}</span>
                 <div class="category-title"><h3 [id]="'title-' + group.id">{{ group.name }}</h3><p>{{ group.description }}</p></div>
@@ -79,9 +67,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-main"><strong>{{ config.name }}</strong><p>Cocina marina peruana.</p></div>
-    <div class="footer-contact"><span>PEDIDOS POR WHATSAPP</span><a [href]="'https://wa.me/' + config.whatsapp" target="_blank" rel="noopener noreferrer">{{ config.displayWhatsapp }} <span aria-hidden="true">↗</span></a></div>
-    <p class="footer-note">Carta demostrativa. Consulta disponibilidad, cobertura y costo de entrega por WhatsApp.</p>
+    <div class="footer-main"><strong>{{ config.name }}</strong><p>{{ config.tagline }}</p></div>
+    <div class="footer-contact"><span>WHATSAPP TEMPORAL DE PEDIDOS · INTEGRATECH</span><a [href]="'https://wa.me/' + config.whatsapp" target="_blank" rel="noopener noreferrer">{{ config.displayWhatsapp }} <span aria-hidden="true">↗</span></a></div>
+    <p class="footer-note">Confirma disponibilidad y entrega por WhatsApp. Las fotos de las promociones son referenciales.</p>
   </footer>
 
   @if (cart.itemCount()) {

@@ -1,14 +1,12 @@
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="#inicio" aria-label="SABOR A MAR, ir al inicio">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" fill="none"><path d="M5 29c7-7 13-7 20 0s13 7 18 0"/><path d="M5 36c7-7 13-7 20 0s13 7 18 0"/><path d="M15 18c4-6 9-6 13 0"/></svg>
-      </span>
-      <span class="brand-type"><strong>{{ businessName() }}</strong><small>CEVICHERÍA · PERÚ</small></span>
+    <a class="brand" href="#inicio" aria-label="Barra Brava, ir al inicio">
+      <img class="brand-mark" src="barra-brava-mark.svg" alt="" width="58" height="45">
+      <span class="brand-type"><strong><span>BARRA</span> BRAVA</strong><small>CEVICHERÍA · BAR</small></span>
     </a>
     <nav class="header-nav" aria-label="Navegación principal">
       <a href="#carta">La carta</a>
-      <button type="button" (click)="viewPromotions.emit()">Promociones</button>
+      <button type="button" (click)="viewPromotions.emit()">Promos al paso</button>
     </nav>
     <button class="order-button" type="button" (click)="openCart.emit()" [attr.aria-label]="'Abrir pedido con ' + itemCount() + (itemCount() === 1 ? ' producto' : ' productos')">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h2l2.2 10.2a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>

@@ -47,5 +47,5 @@ export class App {
     const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
     document.getElementById('carta')?.scrollIntoView({ behavior });
   }
-  viewPromotions(): void { this.selectCategory('promociones'); this.scrollToMenu(); }
+  viewPromotions(): void { this.selectCategory('al-paso'); this.scrollToMenu(); }
 }

@@ -1,18 +1,28 @@
 :host { display: block; }
-.site-header { background: #fbfaf6; border-bottom: 1px solid #e7e5df; }
-.header-inner { max-width: 1360px; height: 76px; padding: 0 36px; margin: auto; display: flex; align-items: center; gap: 40px; }
-.brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); text-decoration: none; min-width: max-content; }
-.brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--navy); color: #fff; }
-.brand-mark svg { width: 29px; height: 29px; stroke: currentColor; stroke-width: 2.25; stroke-linecap: round; }
+.site-header { background: #fff; border-bottom: 1px solid var(--line); }
+.header-inner { max-width: 1320px; height: 82px; padding: 0 30px; margin: auto; display: flex; align-items: center; gap: 34px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; min-width: max-content; color: var(--navy); text-decoration: none; }
+.brand-mark { width: 58px; height: 45px; object-fit: contain; }
 .brand-type { display: grid; gap: 3px; }
-.brand strong { font: 700 1.22rem/1 var(--font-display); letter-spacing: .055em; }
-.brand small { font-size: .58rem; font-weight: 800; letter-spacing: .19em; color: var(--muted); }
-.header-nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
-.header-nav a, .header-nav button { border: 0; padding: 8px 0; background: none; color: var(--ink); text-decoration: none; font-size: .8rem; font-weight: 750; cursor: pointer; }
-.header-nav a:hover, .header-nav button:hover { color: var(--coral); }
-.order-button { min-height: 43px; display: inline-flex; align-items: center; gap: 9px; padding: 5px 6px 5px 15px; border: 1px solid var(--navy); border-radius: 999px; color: #fff; background: var(--navy); font-size: .79rem; font-weight: 800; cursor: pointer; white-space: nowrap; transition: background .2s ease, transform .2s ease; }
-.order-button:hover { background: #14515a; transform: translateY(-1px); }
-.order-button svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.count { min-width: 31px; height: 31px; padding: 0 7px; display: grid; place-items: center; border-radius: 50%; color: var(--navy); background: var(--aqua); font-size: .78rem; }
-@media (max-width: 740px) { .header-inner { height: 66px; padding: 0 17px; gap: 12px; }.header-nav { display: none; }.brand { margin-right: auto; }.brand-mark { width: 38px; height: 38px; }.brand strong { font-size: 1.06rem; }.brand small { font-size: .52rem; }.order-button { width: 42px; min-height: 42px; padding: 0; display: grid; place-items: center; position: relative; }.order-button svg { display: block; width: 20px; height: 20px; }.order-button > span { display: none; }.count { position: absolute; top: -5px; right: -5px; min-width: 19px; height: 19px; padding: 0 4px; border: 2px solid #fbfaf6; font-size: .65rem; } }
-@media (prefers-reduced-motion: reduce) { .order-button { transition: none; } }
+.brand strong { color: var(--navy); font: 900 1.17rem/1 var(--font-display); letter-spacing: .05em; }
+.brand strong span { color: var(--teal); }
+.brand small { color: #b78535; font-size: .63rem; font-weight: 900; letter-spacing: .19em; }
+.header-nav { display: flex; align-items: center; gap: 28px; margin-left: auto; }
+.header-nav a, .header-nav button { border: 0; padding: 8px 0; color: var(--navy); background: none; text-decoration: none; font-size: .83rem; font-weight: 800; cursor: pointer; }
+.header-nav a:hover, .header-nav button:hover { color: var(--teal); }
+.order-button { min-height: 44px; display: inline-flex; align-items: center; gap: 9px; padding: 5px 7px 5px 16px; border: 0; border-radius: 100px; color: #fff; background: var(--navy); font-size: .8rem; font-weight: 800; cursor: pointer; white-space: nowrap; }
+.order-button:hover { background: #3b5b74; }
+.order-button svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.count { min-width: 30px; height: 30px; padding: 0 7px; display: grid; place-items: center; border-radius: 50%; color: var(--navy); background: #a8e3df; font-size: .78rem; }
+@media (max-width: 740px) {
+  .header-inner { height: 68px; padding: 0 16px; gap: 10px; }
+  .header-nav { display: none; }
+  .brand { margin-right: auto; gap: 6px; }
+  .brand-mark { width: 47px; height: 39px; }
+  .brand strong { font-size: 1rem; }
+  .brand small { font-size: .54rem; }
+  .order-button { width: 42px; min-height: 42px; padding: 0; display: grid; place-items: center; position: relative; }
+  .order-button svg { width: 20px; height: 20px; }
+  .order-button > span { display: none; }
+  .count { position: absolute; top: -5px; right: -5px; min-width: 19px; height: 19px; padding: 0 4px; border: 2px solid #fff; font-size: .65rem; }
+}

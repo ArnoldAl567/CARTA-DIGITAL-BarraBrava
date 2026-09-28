@@ -1,20 +1,13 @@
-# Fotografías referenciales
+# Referencia e imágenes de Barra Brava
 
-Las fotografías de este directorio se generaron con la herramienta integrada de imágenes para la carta digital SABOR A MAR. `public/images/` contiene copias WebP optimizadas para la web.
+`barra-brava-carta-referencia.png` es la carta proporcionada para esta adaptación. Las siete fotografías nuevas se generaron con la herramienta integrada de imágenes y sus versiones finales optimizadas están en `public/images/`:
 
-Conceptos usados para generar cada imagen:
+- `promo-rellena.webp`: papa rellena con ceviche clásico.
+- `promo-huancaina.webp`: papa a la huancaína con ceviche clásico.
+- `promo-tortita.webp`: tortita de choclo con ceviche clásico.
+- `duo-economico.webp`: arroz con mariscos y ceviche clásico.
+- `duo-pescado.webp`: chicharrón de pescado y ceviche clásico.
+- `duo-causa.webp`: causa de langostino y ceviche clásico.
+- `duo-pota.webp`: chicharrón de pota y ceviche clásico.
 
-- `ceviche-hero.png`: ceviche peruano en cerámica azul, junto al mar, composición panorámica con espacio para el texto de portada.
-- `ceviche-mixto.png`: pescado, langostino, pulpo y calamar con leche de tigre, choclo, cancha y camote.
-- `ceviche-carretillero.png`: ceviche clásico coronado con calamar crocante.
-- `leche-tigre.png`: copa de leche de tigre con pescado, choclo, cancha y ají.
-- `causa-acevichada.png`: causa de papa amarilla y palta con ceviche encima.
-- `chicharron-calamar.png`: calamar crocante con yuca y salsa de ají amarillo.
-- `arroz-mariscos.png`: arroz con langostinos, calamar, conchas, limón y salsa criolla.
-- `pescado-macho.png`: filete con salsa cremosa de mariscos, arroz y papas doradas.
-- `jalea-marina.png`: jalea de pescado y mariscos con yuca y salsa criolla.
-- `chicha-morada.png`: vasos de chicha morada con hielo y limón.
-- `maracuya.png`: refresco natural de maracuyá con hielo.
-- `limonada.png`: limonada helada con limón y hierbaluisa.
-
-Todas solicitaron fotografía gastronómica editorial realista, presentación peruana, luz natural, mesa de inspiración costera y ausencia de texto, marcas, personas y marcas de agua. Son ilustrativas: sustitúyelas por fotografías propias del negocio cuando estén disponibles.
+Cada imagen tuvo una petición independiente de fotografía gastronómica realista, un plato completo visible, luz natural, fondo neutro y sin texto, logos ni marcas de agua.

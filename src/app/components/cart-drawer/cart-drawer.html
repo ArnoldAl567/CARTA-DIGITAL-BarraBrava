@@ -3,7 +3,7 @@
   <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-describedby="cart-subtitle">
     <header class="drawer-header">
       <div>
-        <span class="drawer-eyebrow">SABOR A MAR / TU SELECCIÓN</span>
+        <span class="drawer-eyebrow">BARRA BRAVA / TU SELECCIÓN</span>
         <h2 id="cart-title">Mi pedido</h2>
         <p id="cart-subtitle">Revisa tus platos antes de abrir WhatsApp.</p>
       </div>
@@ -23,8 +23,8 @@
           <div class="section-title"><span>01</span><h3 id="summary-title">Tus platos</h3><small>{{ cart.itemCount() }} {{ cart.itemCount() === 1 ? 'unidad' : 'unidades' }}</small></div>
           <div class="items">
             @for (item of cart.items(); track item.product.id) {
-              <article class="cart-item">
-                <img [src]="item.product.image" [alt]="item.product.imageAlt" (error)="$any($event.target).src='/images/ceviche-hero.webp'">
+              <article class="cart-item" [class.no-image]="!item.product.image">
+                @if (item.product.image) { <img [src]="item.product.image" [alt]="item.product.imageAlt || item.product.name"> }
                 <div class="item-main">
                   <div class="item-title"><h4>{{ item.product.name }}</h4><strong>{{ item.product.price * item.quantity | currency:'PEN':'symbol-narrow':'1.2-2':'es-PE' }}</strong></div>
                   <p class="unit-price">{{ item.product.price | currency:'PEN':'symbol-narrow':'1.2-2':'es-PE' }} por unidad</p>

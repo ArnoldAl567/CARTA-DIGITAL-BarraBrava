@@ -1,18 +1,16 @@
-@import '@fontsource-variable/fraunces/wght.css';
-@import '@fontsource-variable/fraunces/wght-italic.css';
 @import '@fontsource-variable/dm-sans/wght.css';
 
 :root {
-  --navy: #07383d;
-  --teal: #116c6c;
-  --aqua: #8ce2d4;
-  --coral: #d46d43;
-  --coral-light: #f1a57e;
-  --paper: #fbfaf6;
-  --ink: #12383a;
-  --muted: #5d7473;
-  --line: #dce4df;
-  --font-display: 'Fraunces Variable', Georgia, serif;
+  --navy: #263c50;
+  --teal: #078d97;
+  --aqua: #a8e3df;
+  --coral: #c9974a;
+  --coral-light: #e5ba73;
+  --paper: #f8fbfa;
+  --ink: #253b4e;
+  --muted: #5e707b;
+  --line: #dce7e7;
+  --font-display: 'DM Sans Variable', ui-sans-serif, system-ui, sans-serif;
   --font-body: 'DM Sans Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --ease: cubic-bezier(.2, .75, .25, 1);
   color-scheme: light;

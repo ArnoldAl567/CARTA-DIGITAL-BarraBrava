@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "sabor-a-mar": {
+    "barra-brava": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "sabor-a-mar:build:production"
+              "buildTarget": "barra-brava:build:production"
             },
             "development": {
-              "buildTarget": "sabor-a-mar:build:development"
+              "buildTarget": "barra-brava:build:development"
             }
           },
           "defaultConfiguration": "development"
